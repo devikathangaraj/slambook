@@ -1,0 +1,156 @@
+/* Updated global styles */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5YVB3fAMagcxVgUwaHeRyn8xoMNjaU3Nbeg&s') no-repeat center center fixed;
+  background-size: cover; /* Ensure the background image covers the entire screen */
+}
+
+/* Styling the container box */
+.container {
+  position: relative; /* Make the container a positioning context */
+  display: inline-block; /* Adjust width to content */
+  width: 280px; /* Smaller width for compact box */
+  padding: 10px; /* Reduced padding */
+  background-color:opacity rgba(255, 255, 255, 0.6); /* Semi-transparent to blend with background */
+  border: 1px solid rgba(255, 255, 255, 0.4); /* Light transparent border */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Align text neatly */
+  backdrop-filter: blur(5px); /* Add a blur effect to immerse in the background */
+}
+
+/* Slambook heading */
+.container h1 {
+  position: absolute; /* Position absolutely relative to container */
+  top: -20px; /* Shift upward so half is outside the box */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust to center */
+  margin: 0; /* Remove margin */
+  font-family: "Georgia", serif;
+  color: #4b0082; /* Deep purple */
+  font-size: 3.2em; /* Larger font size for prominence */
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #aaa; /* Add a slight shadow for effect */
+  background-color: rgba(255, 255, 255, 0.8); /* Match body background */
+  padding: 0 10px; /* Add padding to overlap cleanly */
+  line-height: 1.1;
+}
+
+/* Form heading */
+.container h4 {
+  text-align: center;
+  margin-bottom:10px; /* Reduced margin */
+  color: #333;
+  font-size: 16px; /* Smaller font size */
+}
+
+/* Labels and inputs */
+.container label {
+  display: block;
+  margin-bottom: 3px; /* Reduced margin */
+  font-size: 12px; /* Smaller font size */
+  font-weight: bold;
+  color: #555;
+}
+
+.container input[type="text"],
+.container input[type="date"],
+.container textarea,
+.container select {
+  width: 100%; /* Full width of container */
+  padding: 3px; /* Reduced padding */
+  margin-bottom: 8px; /* Reduced margin */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 12px; /* Smaller font size */
+  box-sizing: border-box;
+}
+
+/* Textarea styling */
+.container textarea {
+  resize: none;
+}
+
+/* Radio and checkbox alignment */
+.container input[type="radio"],
+.container input[type="checkbox"] {
+  margin-right: 4px; /* Reduced margin */
+  transform: scale(0.9); /* Shrink size */
+}
+
+/* Button styling */
+.container button {
+  width: 100%;
+  padding: 0.6em 1.2em;
+  background-color: #1a1a1a;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  font-family: inherit;
+}
+.container button:hover {
+  border-color: #646cff;
+}
+.container button:focus,
+.container button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* Center align text in divs */
+div {
+  background-color: rgb(187, 200, 219);
+  opacity: 0.7;
+  display: flex;
+  margin-left: 250px;
+  margin-right: 250px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Slambook container styling */
+.slambook-container {
+  font-family: Arial, sans-serif;
+  background-color: rgba(255, 255, 255, 0.5); /* Transparent form background */
+  border: 2px solid rgba(255, 255, 255, 0.4); /* Light transparent border */
+  border-radius: 8px; /* Rounded corners */
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  position: relative; /* For positioning the header cutout */
+  backdrop-filter: blur(10px); /* Add a blur effect for better immersion */
+}
